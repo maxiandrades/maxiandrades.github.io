@@ -19,15 +19,14 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
+        <div class="container-fluid px-lg-5">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" class="img-fluid">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              </button>
+            <div class="collapse navbar-collapse" id="navbar-nav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Acerca de mi</a>
@@ -36,7 +35,7 @@
                         <a class="nav-link" href="#Mis-trabajos">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contacto">Contacto</a>
+                        <a class="nav-link" href="#Antecedentes">Antecedentes</a>
                     </li>
 
                 </ul>
@@ -55,10 +54,6 @@
                      Técnico en redes de gas participando en tres campos principales: mantenimiento de redes,
                      mantenimiento industrial y servicios de emergencia y muchas otras funciones 
                 </p>
-                <div class="mb-5 pb-5">
-                    <button class="btn btn-lg btn-outline-info text-light me-4">Trabajos</button>
-                    <button class="btn btn-lg btn-info text-light">Contacto</button>
-                </div>
             </div>
         </div>
     </header>
@@ -164,50 +159,88 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-
-
-    <section id="Contacto" class="container my-5">
-
-        <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
-
-        <p class="text-center my-4 d-none d-md-block">Como profesional puedo desempeñar algunas funciones de conducción,
-             sobre todo si forman parte de un servicio de urgencias.Estoy preparado para trabajar al aire libre
-              en toda clase de condiciones meteorológicas. mi trabajo está estrechamente controlado y garantizado
-           </p>
-
-        <form>
-
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Nombre</label>
-                <input class="form-control" placeholder="Nombre">
+    <section id="Antecedentes" class="container my-5">
+    <h2 class="display-4 fw-bold text-center my-4">Antecedentes</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Constructora Malpo
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>Constructora Malpo (2012-2014)</strong>  Práctica Profesional en Constructora Malpo desempeñándose en el
+              departamento de Instalaciones Sanitarias domiciliarias que abarca la 
+              distribución de el Agua Potable (Fría y Caliente), Alcantarillado (descarga de aguas servidas) 
+             </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Grupo Eulen
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Grupo Eulen (2015-2016)</strong> supervisor/instalador.
+              instalacion y mantenimiento de medidores de agua potable en la septima region 
             </div>
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Correo electrónico</label>
-                <input class="form-control" placeholder="Correo electrónico" />
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                INGENIERIA Y SERVICIOS INTEGRALES EVJ LIMITADA
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>INGENIERIA Y SERVICIOS INTEGRALES EVJ LIMITADA (2019-Presente)</strong>
+               Técnico en redes de gas participando en tres campos principales: mantenimiento de redes de gas,
+              mantenimiento industrial y servicios de emergencia en la sexta y septima region
             </div>
-
-
-            <div class="form-group">
-                <label class="mb-2">Mensaje</label>
-                <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+          </div>
+        </div>
+      </div>
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Datos Personales</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Antecedentes Academicos</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+                <ul>
+                    <li>Maximiliano muñoz andrades</li>
+                    <li>f.nacimiento: 08/01/1994</li>
+                    <li>nacionalidad: chileno</li>
+                    <li>telefono: 9612726</li>
+                     <li>maxiandrades26@gmail.com</li>
+                    </ul>
             </div>
-
-            <div class="my-3 text-end">
-                <button class="btn btn-info text-light">Enviar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                <ul>
+                    <li>Educacion media:Liceo industrial superior talca</li>
+                    <li>Educacion basica:Escuela Panguilemo Edita Gallegos Rodríguez</li>
+                    <li>titulo:Tecnico nivel medio en instalaciones sanitarias</li>
+                    <li>tecnico clase 3</li>
+                    
+                     
+                    </ul>
             </div>
-
-
-
-        </form>
-
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <footer class="bg-dark text-center text-light p-4">
         <p class="mb-0">Maximiliano Muñoz. Todos los derechos reservados.</p>
